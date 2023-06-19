@@ -1,0 +1,43 @@
+.contact-page .concent{
+    height: 100%;
+}
+
+.contact-page .form{
+    height: 100%;
+}
+
+.concent>h1 {
+    width: 90%;
+    color: white;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.concent>h1:nth-child(1) {
+    margin-top: 50px;
+}
+
+.form {
+    width: 80%;
+    height: 450px;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.label {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+}
+
+.biaodan {
+    width: 100%;
+}

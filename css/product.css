@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.out {
+    width: 800px;
+    height: 350px;
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    transition: 0.3s;
+    list-style-type: none;
+}
+
+.img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    font-size: 32px;
+}
+
+.arrow>i {
+    position: absolute;
+    color: #fff;
+    z-index: 999;
+    cursor: pointer;
+    top: 84px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 780px;
+}
+
+.button {
+    width: 175px;
+    height: 15px;
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.button>li {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: silver;
+    list-style-type: none;
+}
+
+.button>li:first-child {
+    background-color: #1486bb;
+}
+
+#last {
+    transform: translateX(0);
+    z-index: 9;
+    opacity: 1;
+}
+
+#first {
+    transform: translateX(200px) scale(1.3);
+    z-index: 99;
+    opacity: 1;
+}
+
+#second {
+    transform: translateX(400px);
+    z-index: 9;
+    opacity: 1;
+}
+
+#right {
+    transform: translateX(500px);
+    z-index: 1;
+    opacity: 0;
+}
+.more{
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-left: 10%;
+   margin-top: 150px;
+}
+.more_text{
+    width: 100%;
+    background-color: #837A7D;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+
+@media (min-width: 768px) {
+    .more_text {
+        flex-direction: row;
+    }
+}
+
+.more_text>img{
+    width: 100%;
+    height: 150px;
+    margin-right: 15px;
+    object-fit: contain;
+    background: white;
+}
+
+
+@media (min-width: 768px) {
+    .more_text>img{
+        width: 200px;
+    }
+}
+
+.moreleft{
+    width: 100px;
+    height: 150px;
+}
+.moreleft>p{
+    width: 75px;
+    line-height: 150%;
+    height: 90px;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 10px;
+}
+.moreleft>button{
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin-left:calc(50% - 35px);
+    font-weight: 800;
+}
+.moreleft>button:hover{
+    background-color: #1486bb;
+    color: white;
+    transition: all 0.5s;
+}
